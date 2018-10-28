@@ -1,0 +1,45 @@
+.promo {
+
+  &__container {
+    @include container();
+    padding-bottom: 37px;
+  }
+
+  &__list {
+    @include order-reset();
+  }
+
+  &__item {
+    width: 80%;
+    padding-top: 40px;
+    padding-left: 25px;
+
+    svg {
+      display: block;
+      margin-bottom: 30px;
+      width: 57px;
+      height: 57px;
+      fill: $green;
+    }
+  }
+
+  &__item-title {
+    display: block;
+    margin-bottom: 6px;
+    font-family: $font;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.33;
+    text-align: left;
+    color: $main;
+  }
+
+  &__item-text {
+    @include order-reset();
+    font-family: $font;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: left;
+    color: $add;
+  }
+}

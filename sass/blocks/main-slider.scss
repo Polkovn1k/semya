@@ -1,0 +1,70 @@
+.main-slider {
+  position: relative;
+  margin: 0 -15px;
+
+  &__slider-1,
+  &__slider-2,
+  &__slider-3 {
+    display: none;
+  }
+
+  &__radio {
+    position: absolute;
+    right: 50%;
+    bottom: 23px;
+    transform: translateX(50%);
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background-color: $white;
+    cursor: pointer;
+  }
+
+  &__radio--1 {
+    transform: translateX(50%) translateX(-17px);
+  }
+
+  &__radio--3 {
+    transform: translateX(50%) translateX(17px);
+  }
+
+  &__item {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 245px;
+    background: url("../img/main-slider.jpg") no-repeat center center;
+    background-size: cover;
+    min-height: 425px;
+  }
+
+  &__item--1,
+  &__item--2,
+  &__item--3 {
+    display: none;
+  }
+
+  &__slider-1:checked ~ &__radio--1,
+  &__slider-2:checked ~ &__radio--2,
+  &__slider-3:checked ~ &__radio--3 {
+    background-color: $green;
+  }
+
+  &__slider-1:checked ~ &__item--1,
+  &__slider-2:checked ~ &__item--2,
+  &__slider-3:checked ~ &__item--3 {
+    display: block;
+  }
+
+  &__title {
+    @include field-reset();
+    margin-bottom: 20px;
+
+    font-family: $font;
+    font-size: 26px;
+    font-weight: 400;
+    font-stretch: normal;
+    line-height: 1.35;
+    text-align: center;
+    color: $white;
+  }
+}

@@ -1,0 +1,139 @@
+.navigation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  min-height: $mobile-nav-height;
+
+  background: $white;
+
+  &__container {
+    @include container();
+    position: relative;
+  }
+
+  &__logo {
+    padding-top: 17px;
+    padding-bottom: 11px;
+  }
+
+  &__logo-link {
+    display: inline-block;
+    vertical-align: top;
+
+    img {
+      width: 112px;
+    }
+  }
+
+  &__list {
+    @include order-reset();
+    display: none;
+  }
+
+  &__list--show {
+    display: block;
+    height: 100vh;
+    background: $white;
+  }
+
+  &__item:not(:last-child) {
+
+    a {
+      position: relative;
+      display: block;
+      margin: 0 -15px;
+      padding-top: 24px;
+      padding-bottom: 20px;
+      padding-left: 27px;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 1.31;
+      color: $green;
+      border-bottom: solid 1px $add-border;
+    }
+
+    a::before {
+      @include pseudo();
+      top: 28px;
+      right: 33px;
+      width: 12px;
+      height: 12px;
+      border: solid 2px $link-arrow;
+      border-top: $transparent;
+      border-left: $transparent;
+      transform: rotate(-45deg);
+    }
+  }
+
+  &__item:first-child {
+
+    a {
+      box-shadow: inset 0 3px 15px 0 transparentize($black, 0.94);
+    }
+  }
+
+  &__item:nth-last-child(2) {
+    padding-bottom: 12px;
+
+    a {
+      border-bottom: none;
+    }
+  }
+
+  &__tog {
+    position: absolute;
+    top: 22px;
+    right: 25px;
+    width: 24px;
+    height: 21px;
+    font-size: 0;
+    background: $transparent;
+    background-image: linear-gradient(180deg, $transparent 10px, $green 10px, $green 12px, $transparent 12px);
+    border: none;
+    cursor: pointer;
+  }
+
+  &__tog::before {
+    @include pseudo();
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: $green;
+    transition: top ease 0.5s, transform ease 0.5s, height ease 0.5s;
+  }
+
+  &__tog::after {
+    @include pseudo();
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: $green;
+    transition: bottom ease 0.5s, transform ease 0.5s, height ease 0.5s;
+  }
+
+  &__tog--close {
+    background-image: none;
+  }
+
+  &__tog--close::before {
+    transform: rotate(315deg);
+    height: 3px;
+    top: 10px;
+  }
+
+  &__tog--close::after {
+    transform: rotate(-315deg);
+    height: 3px;
+    bottom: 8px;
+  }
+
+  &--footer {
+    position: static;
+  }
+}

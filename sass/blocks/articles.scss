@@ -1,0 +1,40 @@
+.articles {
+
+  &__container {
+    @include container();
+    padding-top: 50px;
+    padding-bottom: 13px;
+  }
+
+  &__title {
+    @include field-reset();
+    position: relative;
+    margin-bottom: 21px;
+
+    font-family: $font;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 1.32;
+    text-align: center;
+    color: $main;
+  }
+
+  &__gap {
+    @include field-reset();
+    margin-right: -15px;
+    margin-left: -15px;
+    height: 1px;
+    background-color: $add-border;
+    border: none;
+  }
+
+  &__list {
+    @include order-reset();
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-top: 27px;
+    max-width: $tablet-container;
+    margin: 0 auto;
+  }
+}

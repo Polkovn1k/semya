@@ -1,0 +1,30 @@
+.collection {
+  background: $section;
+
+  &__container {
+    @include container();
+    padding-top: 27px;
+  }
+
+  &__title {
+    @include field-reset();
+    position: relative;
+    margin-bottom: 21px;
+
+    font-family: $font;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 1.32;
+    text-align: center;
+    color: $main;
+  }
+
+  &__gap {
+    @include field-reset();
+    margin-right: -15px;
+    margin-left: -15px;
+    height: 1px;
+    background-color: $add-border;
+    border: none;
+  }
+}
