@@ -4,4 +4,11 @@
   @media (min-width: $desktop) {
     margin-top: $desktop-nav-height + 52px;
   }
+
+  &--pagination {
+
+    @media (min-width: $tablet) {
+      padding-top: 30px;
+    }
+  }
 }

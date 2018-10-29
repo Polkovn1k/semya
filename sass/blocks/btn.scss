@@ -101,8 +101,8 @@
     line-height: 1.36;
 
     @media (min-width: $add-tablet) {
-    margin: 0 auto 0 0;
-    width: 139px;
+      margin: 0 auto 0 0;
+      width: 139px;
     }
   }
 
@@ -118,5 +118,8 @@
     border-color: $white;
     color: $white;
   }
-}
 
+  &--hide {
+    display: none;
+  }
+}

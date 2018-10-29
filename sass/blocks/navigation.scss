@@ -6,11 +6,16 @@
   width: 100%;
   min-height: $mobile-nav-height;
   background: $white;
+  box-shadow: 0 3px 15px 0 rgba(0, 0, 0, 0.06);
 
   @media (min-width: $desktop) {
     min-height: $desktop-nav-height;
     display: flex;
   }
+
+/*   &::before {
+  @include
+} */
 
   &__container {
     @include container();
@@ -137,6 +142,14 @@
     @media (min-width: $desktop) {
       padding-bottom: 0;
       margin-right: 49px;
+
+      a {
+        border-bottom: solid 3px $green;
+      }
+
+      a[href] {
+        border-bottom: none;
+      }
     }
   }
 
