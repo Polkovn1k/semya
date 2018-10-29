@@ -1,0 +1,54 @@
+.collection {
+  background: $section;
+
+  &__container {
+    @include container();
+    padding-top: 27px;
+
+    @media (min-width: $desktop) {
+      display: flex;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      padding-top: 30px;
+    }
+  }
+
+  &__title {
+    @include field-reset();
+    position: relative;
+    margin-bottom: 21px;
+
+    font-family: $font;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 1.32;
+    text-align: center;
+    color: $main;
+  }
+
+  &__gap {
+    @include field-reset();
+    margin-right: -15px;
+    margin-left: -15px;
+    height: 1px;
+    background-color: $add-border;
+    border: none;
+
+    @media (min-width: $desktop) {
+      width: 100%;
+      margin-top: 12px;
+      margin-right: 0;
+      margin-left: 0;
+    }
+  }
+}
+
+/* ----------COLLECTION PAGE */
+.collection--main-page {
+  background-color: $white;
+}
+
+.collection__container--main-page {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}

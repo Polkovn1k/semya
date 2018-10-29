@@ -1,0 +1,41 @@
+.pagination {
+  display: none;
+
+  @media (min-width: $tablet) {
+    display: block;
+  }
+
+  &__list {
+    @include order-reset();
+    @include container();
+    display: block;
+  }
+
+  &__item {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 25px;
+
+    font-family: $font;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.36;
+    color: $add;
+
+    a[href]:hover {
+      border-bottom: 1px dotted $add;
+    }
+  }
+
+  &__item:last-child {
+    margin-right: 0;
+  }
+
+  &__item:not(:last-child)::before {
+    display: block;
+    content: "—";
+    position: absolute;
+    right: -18px;
+  }
+}

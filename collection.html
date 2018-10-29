@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Add Semya --Collection</title>
+  <meta name="description" content="Some Text">
+  <meta name="keywords" content="Some Text">
+  <link rel="shortcut icon" type="image/x-icon" href="*.ico">
+  <link rel="shortcut icon" type="image/png" href="*.png">
+  <link rel="apple-touch-icon" href="favicon.png">
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="canonical" href="https://***.ru/">
+</head>
+<body>
+  <div style="display: none">
+    <include src="build/img/sprite.svg"></include>
+  </div>
+
+  <header class="header header--index">
+    <nav class="navigation">
+      <div class="navigation__container">
+        <div class="navigation__logo">
+          <a href="/" class="navigation__logo-link">
+            <img src="img/logo.png" alt="#">
+          </a>
+        </div>
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a href="/">Главная</a>
+          </li>
+          <li class="navigation__item">
+            <a>Коллекции</a>
+          </li>
+          <li class="navigation__item">
+            <a href="articles.html">Статьи</a>
+          </li>
+          <li class="navigation__item">
+            <a href="https://semyanich-semena.sale" class="btn btn--green">Перейти в магазин</a>
+          </li>
+        </ul>
+        <button type="button" class="navigation__tog">
+          открыть или закрыть основное меню
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main class="main main--pagination">
+    <div class="pagination">
+      <ul class="pagination__list">
+        <li class="pagination__item">
+          <a href="/">Главная</a>
+        </li>
+        <li class="pagination__item">
+          <a>Коллекции</a>
+        </li>
+      </ul>
+    </div>
+
+    <section class="collection collection--main-page">
+      <div class="collection__container collection__container--main-page">
+        <h2 class="collection__title">Коллекции</h2>
+        <a href="#" class="btn btn--small btn--hide">Смотреть все</a>
+        <hr class="collection__gap">
+
+        <div class="carousel carousel--popular">
+          <span class="carousel__title">Популярные</span>
+          <div class="swiper-container carousel__container">
+            <ul class="swiper-wrapper carousel__list">
+              <li class="swiper-slide product">
+                <article class="product__container">
+                  <h3 class="product__title">
+                    <a href="#">Pineapple Chunk 1</a>
+                  </h3>
+                  <p class="product__property">ТГК 25%</p>
+                  <div class="product__img">
+                    <img src="img/product.png" alt="#">
+                  </div>
+                  <a href="#" class="btn btn--product">Подробнее</a>
+                </article>
+              </li>
+              <li class="swiper-slide product">
+                <article class="product__container">
+                  <h3 class="product__title">
+                    <a href="#">Pineapple Chunk 2</a>
+                  </h3>
+                  <p class="product__property">ТГК 25%</p>
+                  <div class="product__img">
+                    <img src="img/product.png" alt="#">
+                  </div>
+                  <a href="#" class="btn btn--product">Подробнее</a>
+                </article>
+              </li>
+              <li class="swiper-slide product">
+                <article class="product__container">
+                  <h3 class="product__title">
+                    <a href="#">Pineapple Chunk 3</a>
+                  </h3>
+                  <p class="product__property">ТГК 25%</p>
+                  <div class="product__img">
+                    <img src="img/product.png" alt="#">
+                  </div>
+                  <a href="#" class="btn btn--product">Подробнее</a>
+                </article>
+              </li>
+              <li class="swiper-slide product">
+                <article class="product__container">
+                  <h3 class="product__title">
+                    <a href="#">Pineapple Chunk 4</a>
+                  </h3>
+                  <p class="product__property">ТГК 25%</p>
+                  <div class="product__img">
+                    <img src="img/product.png" alt="#">
+                  </div>
+                  <a href="#" class="btn btn--product">Подробнее</a>
+                </article>
+              </li>
+              <li class="swiper-slide product">
+                <article class="product__container">
+                  <h3 class="product__title">
+                    <a href="#">Pineapple Chunk 5</a>
+                  </h3>
+                  <p class="product__property">ТГК 25%</p>
+                  <div class="product__img">
+                    <img src="img/product.png" alt="#">
+                  </div>
+                  <a href="#" class="btn btn--product">Подробнее</a>
+                </article>
+              </li>
+              <li class="swiper-slide product">
+                <article class="product__container">
+                  <h3 class="product__title">
+                    <a href="#">Pineapple Chunk 6</a>
+                  </h3>
+                  <p class="product__property">ТГК 25%</p>
+                  <div class="product__img">
+                    <img src="img/product.png" alt="#">
+                  </div>
+                  <a href="#" class="btn btn--product">Подробнее</a>
+                </article>
+              </li>
+            </ul>
+            <div class="swiper-button-prev carousel__arrow"></div>
+            <div class="swiper-button-next carousel__arrow carousel__arrow--right"></div>
+          </div>
+        </div>
+
+        <div class="carousel carousel--cheap">
+          <span class="carousel__title">Дешевые</span>
+          <div class="swiper-container carousel__container">
+            <ul class="swiper-wrapper carousel__list">
+              <li class="swiper-slide product">
+                <article class="product__container">
+                  <h3 class="product__title">
+                    <a href="#">Pineapple Chunk 1</a>
+                  </h3>
+                  <p class="product__property">ТГК 25%</p>
+                  <div class="product__img">
+                    <img src="img/product.png" alt="#">
+                  </div>
+                  <a href="#" class="btn btn--product">Подробнее</a>
+                </article>
+              </li>
+              <li class="swiper-slide product">
+                <article class="product__container">
+                  <h3 class="product__title">
+                    <a href="#">Pineapple Chunk 2</a>
+                  </h3>
+                  <p class="product__property">ТГК 25%</p>
+                  <div class="product__img">
+                    <img src="img/product.png" alt="#">
+                  </div>
+                  <a href="#" class="btn btn--product">Подробнее</a>
+                </article>
+              </li>
+              <li class="swiper-slide product">
+                <article class="product__container">
+                  <h3 class="product__title">
+                    <a href="#">Pineapple Chunk 3</a>
+                  </h3>
+                  <p class="product__property">ТГК 25%</p>
+                  <div class="product__img">
+                    <img src="img/product.png" alt="#">
+                  </div>
+                  <a href="#" class="btn btn--product">Подробнее</a>
+                </article>
+              </li>
+              <li class="swiper-slide product">
+                <article class="product__container">
+                  <h3 class="product__title">
+                    <a href="#">Pineapple Chunk 4</a>
+                  </h3>
+                  <p class="product__property">ТГК 25%</p>
+                  <div class="product__img">
+                    <img src="img/product.png" alt="#">
+                  </div>
+                  <a href="#" class="btn btn--product">Подробнее</a>
+                </article>
+              </li>
+              <li class="swiper-slide product">
+                <article class="product__container">
+                  <h3 class="product__title">
+                    <a href="#">Pineapple Chunk 5</a>
+                  </h3>
+                  <p class="product__property">ТГК 25%</p>
+                  <div class="product__img">
+                    <img src="img/product.png" alt="#">
+                  </div>
+                  <a href="#" class="btn btn--product">Подробнее</a>
+                </article>
+              </li>
+              <li class="swiper-slide product">
+                <article class="product__container">
+                  <h3 class="product__title">
+                    <a href="#">Pineapple Chunk 6</a>
+                  </h3>
+                  <p class="product__property">ТГК 25%</p>
+                  <div class="product__img">
+                    <img src="img/product.png" alt="#">
+                  </div>
+                  <a href="#" class="btn btn--product">Подробнее</a>
+                </article>
+              </li>
+            </ul>
+            <div class="swiper-button-prev carousel__arrow"></div>
+            <div class="swiper-button-next carousel__arrow carousel__arrow--right"></div>
+          </div>
+        </div>
+
+        <div class="carousel carousel--cheap">
+          <span class="carousel__title">Урожайные</span>
+          <div class="swiper-container carousel__container">
+            <ul class="swiper-wrapper carousel__list">
+              <li class="swiper-slide product">
+                <article class="product__container">
+                  <h3 class="product__title">
+                    <a href="#">Pineapple Chunk 1</a>
+                  </h3>
+                  <p class="product__property">ТГК 25%</p>
+                  <div class="product__img">
+                    <img src="img/product.png" alt="#">
+                  </div>
+                  <a href="#" class="btn btn--product">Подробнее</a>
+                </article>
+              </li>
+              <li class="swiper-slide product">
+                <article class="product__container">
+                  <h3 class="product__title">
+                    <a href="#">Pineapple Chunk 2</a>
+                  </h3>
+                  <p class="product__property">ТГК 25%</p>
+                  <div class="product__img">
+                    <img src="img/product.png" alt="#">
+                  </div>
+                  <a href="#" class="btn btn--product">Подробнее</a>
+                </article>
+              </li>
+              <li class="swiper-slide product">
+                <article class="product__container">
+                  <h3 class="product__title">
+                    <a href="#">Pineapple Chunk 3</a>
+                  </h3>
+                  <p class="product__property">ТГК 25%</p>
+                  <div class="product__img">
+                    <img src="img/product.png" alt="#">
+                  </div>
+                  <a href="#" class="btn btn--product">Подробнее</a>
+                </article>
+              </li>
+              <li class="swiper-slide product">
+                <article class="product__container">
+                  <h3 class="product__title">
+                    <a href="#">Pineapple Chunk 4</a>
+                  </h3>
+                  <p class="product__property">ТГК 25%</p>
+                  <div class="product__img">
+                    <img src="img/product.png" alt="#">
+                  </div>
+                  <a href="#" class="btn btn--product">Подробнее</a>
+                </article>
+              </li>
+              <li class="swiper-slide product">
+                <article class="product__container">
+                  <h3 class="product__title">
+                    <a href="#">Pineapple Chunk 5</a>
+                  </h3>
+                  <p class="product__property">ТГК 25%</p>
+                  <div class="product__img">
+                    <img src="img/product.png" alt="#">
+                  </div>
+                  <a href="#" class="btn btn--product">Подробнее</a>
+                </article>
+              </li>
+              <li class="swiper-slide product">
+                <article class="product__container">
+                  <h3 class="product__title">
+                    <a href="#">Pineapple Chunk 6</a>
+                  </h3>
+                  <p class="product__property">ТГК 25%</p>
+                  <div class="product__img">
+                    <img src="img/product.png" alt="#">
+                  </div>
+                  <a href="#" class="btn btn--product">Подробнее</a>
+                </article>
+              </li>
+            </ul>
+            <div class="swiper-button-prev carousel__arrow"></div>
+            <div class="swiper-button-next carousel__arrow carousel__arrow--right"></div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="about">
+      <div class="about__container">
+        <h3 class="about__title">О компании</h3>
+        <p class="about__text">
+          Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов в абзацах, которое не получается при простой дубликации "Здесь ваш текст.. Здесь ваш текст.. Здесь ваш текст.." Многие программы электронной вёрстки и редакторы HTML используют Lorem Ipsum в качестве текста по умолчанию, так что поиск по ключевым словам "lorem ipsum" сразу показывает, как много веб-страниц всё ещё дожидаются своего настоящего рождения. За прошедшие годы текст Lorem Ipsum получил много версий. Некоторые версии появились по ошибке, некоторые - намеренно (например, юмористические варианты).<br>
+          Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов в абзацах, которое не получается при простой дубликации "Здесь ваш текст.. Здесь ваш текст.. Здесь ваш текст.." Многие программы электронной вёрстки и редакторы HTML используют Lorem Ipsum в качестве текста по умолчанию, так что поиск по ключевым словам "lorem ipsum" сразу показывает, как много веб-страниц всё ещё дожидаются своего настоящего рождения. За прошедшие годы текст Lorem Ipsum получил много версий. Некоторые версии появились по ошибке, некоторые - намеренно (например, юмористические варианты).
+        </p>
+        <button type="button" class="btn btn--about">Развернуть</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__container">
+      <nav class="footer-nav">
+        <div class="footer-nav__container">
+          <ul class="footer-nav__list">
+            <li class="footer-nav__item">
+              <a href="/">Главная</a>
+            </li>
+            <li class="footer-nav__item">
+              <a">Коллекции</a>
+            </li>
+            <li class="footer-nav__item">
+              <a href="articles.html">Статьи</a>
+            </li>
+          </ul>
+          <a href="https://semyanich-semena.sale" class="btn btn--footer">Перейти в магазин</a>
+        </div>
+      </nav>
+    </div>
+  </footer>
+  <script src="js/script.js"></script>
+  <script src="js/swiper.js"></script>
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      slidesPerView: 4,
+      spaceBetween: 30,
+      // init: false,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      breakpoints: {
+        966: {
+          slidesPerView: 3,
+          spaceBetween: 30,
+        },
+        768: {
+          slidesPerView: 3,
+          spaceBetween: 30,
+        },
+        640: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        420: {
+          slidesPerView: 1,
+          spaceBetween: 10,
+        }
+      }
+    });
+  </script>
+</body>
+</html>
