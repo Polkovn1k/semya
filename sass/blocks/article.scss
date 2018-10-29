@@ -6,6 +6,14 @@
   border: solid 1px $add-border;
   transition: 0.3s ease transform, 0.3s ease box-shadow;
 
+  &:hover {
+
+    .btn {
+      color: $white;
+      background-color: $green;
+    }
+  }
+
   @media (min-width: $tablet) {
     width: 48%;
 

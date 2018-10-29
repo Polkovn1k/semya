@@ -1,8 +1,8 @@
 .articles {
-  padding-bottom: 45px;
+  padding-bottom: 16px;
 
   @media (min-width: $desktop) {
-    padding-bottom: 40px;
+    padding-bottom: 35px;
   }
 
   &__container {
@@ -67,3 +67,6 @@
 .articles__container--main-page {
   padding-top: 30px;
 }
+/*
+72
+43 */

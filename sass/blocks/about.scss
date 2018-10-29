@@ -1,6 +1,10 @@
 .about {
   padding-bottom: 15px;
 
+  @media (min-width: $add-tablet) {
+    padding-bottom: 90px;
+  }
+
   &__container {
     @include container();
   }

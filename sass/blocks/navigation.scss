@@ -6,7 +6,7 @@
   width: 100%;
   min-height: $mobile-nav-height;
   background: $white;
-  box-shadow: 0 3px 15px 0 rgba(0, 0, 0, 0.06);
+  box-shadow: 0 3px 15px 0 transparentize($black, 0.94);
 
   @media (min-width: $desktop) {
     min-height: $desktop-nav-height;
@@ -102,6 +102,10 @@
 
       a[href] {
         border-bottom: none;
+      }
+
+      a[href]:hover {
+        opacity: 0.65;
       }
 
       a::before {
