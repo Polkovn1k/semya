@@ -1709,6 +1709,8 @@ button.swiper-pagination-bullet {
     background-image: -webkit-gradient(linear, left bottom, left top, from(#ffffff), color-stop(80%, transparent));
     background-image: linear-gradient(to top, #ffffff, transparent 80%); }
   .article__img {
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
     margin-right: -25px;
     margin-left: -25px;
     margin-bottom: 22px;
