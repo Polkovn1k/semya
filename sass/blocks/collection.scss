@@ -4,6 +4,13 @@
   &__container {
     @include container();
     padding-top: 27px;
+
+    @media (min-width: $desktop) {
+      display: flex;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      padding-top: 30px;
+    }
   }
 
   &__title {
@@ -26,5 +33,12 @@
     height: 1px;
     background-color: $add-border;
     border: none;
+
+    @media (min-width: $desktop) {
+      width: 100%;
+      margin-top: 12px;
+      margin-right: 0;
+      margin-left: 0;
+    }
   }
 }

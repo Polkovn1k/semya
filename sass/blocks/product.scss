@@ -58,5 +58,9 @@
     img {
       width: 138px;
     }
+
+    @media (min-width: $desktop) {
+      margin-bottom: 33px;
+    }
   }
 }

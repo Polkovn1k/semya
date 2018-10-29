@@ -14,3 +14,14 @@ window.addEventListener("keydown", function(event) {
     tog.classList.remove("navigation__tog--close");
   }
 });
+
+
+/* ----------SHOW "ABOUT" - INDEX */
+var showAbout = document.querySelector(".btn--about");
+var aboutText =  document.querySelector(".about__text");
+
+showAbout.addEventListener("click", function(event) {
+  event.preventDefault();
+  aboutText.classList.add("about__text--show");
+  showAbout.classList.add("btn--about-hide");
+});

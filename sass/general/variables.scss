@@ -3,8 +3,10 @@ $indent: 15px;
 
 // Grid - breakpoints
 $tablet: 768px;
+$add-tablet: 640px;
 $desktop: 996px;
 $max-desktop: 1200px;
+$desktop-add: 966px;
 
 // Fonts
 $font: "SegoeUI", sans-serif;
@@ -25,4 +27,5 @@ $transparent: transparent;
 
 //Other
 $mobile-nav-height: 65px;
+$desktop-nav-height: 98px;
 $tablet-container: 900px;

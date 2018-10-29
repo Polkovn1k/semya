@@ -5,17 +5,30 @@
   z-index: 100;
   width: 100%;
   min-height: $mobile-nav-height;
-
   background: $white;
+
+  @media (min-width: $desktop) {
+    min-height: $desktop-nav-height;
+    display: flex;
+  }
 
   &__container {
     @include container();
     position: relative;
+
+    @media (min-width: $desktop) {
+      display: flex;
+      width: 100%;
+    }
   }
 
   &__logo {
     padding-top: 17px;
     padding-bottom: 11px;
+
+    @media (min-width: $desktop) {
+      padding-top: 31px;
+    }
   }
 
   &__logo-link {
@@ -30,6 +43,11 @@
   &__list {
     @include order-reset();
     display: none;
+
+    @media (min-width: $desktop) {
+      display: flex;
+      margin-left: auto;
+    }
   }
 
   &__list--show {
@@ -65,12 +83,47 @@
       border-left: $transparent;
       transform: rotate(-45deg);
     }
+
+    @media (min-width: $desktop) {
+      margin-right: 45px;
+
+      a {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        padding-top: 39px;
+        border-bottom: solid 3px $green;
+      }
+
+      a[href] {
+        border-bottom: none;
+      }
+
+      a::before {
+        display: none;
+        bottom: 0;
+      }
+    }
+  }
+
+  &__item:last-child {
+
+    @media (min-width: $desktop) {
+      padding-top: 30px;
+    }
   }
 
   &__item:first-child {
 
     a {
       box-shadow: inset 0 3px 15px 0 transparentize($black, 0.94);
+    }
+
+    @media (min-width: $desktop) {
+
+      a {
+        box-shadow: none;
+      }
     }
   }
 
@@ -79,6 +132,11 @@
 
     a {
       border-bottom: none;
+    }
+
+    @media (min-width: $desktop) {
+      padding-bottom: 0;
+      margin-right: 49px;
     }
   }
 
@@ -93,6 +151,10 @@
     background-image: linear-gradient(180deg, $transparent 10px, $green 10px, $green 12px, $transparent 12px);
     border: none;
     cursor: pointer;
+
+    @media (min-width: $desktop) {
+      display: none;
+    }
   }
 
   &__tog::before {
@@ -131,9 +193,5 @@
     transform: rotate(-315deg);
     height: 3px;
     bottom: 8px;
-  }
-
-  &--footer {
-    position: static;
   }
 }

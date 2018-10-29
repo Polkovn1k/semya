@@ -5,8 +5,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Add Semya</title>
-  <meta name="description" content="***">
-  <meta name="keywords" content="***">
+  <meta name="description" content="Some Text">
+  <meta name="keywords" content="Some Text">
   <link rel="shortcut icon" type="image/x-icon" href="*.ico">
   <link rel="shortcut icon" type="image/png" href="*.png">
   <link rel="apple-touch-icon" href="favicon.png">
@@ -64,15 +64,15 @@
           <label for="main-slider-2" class="main-slider__radio main-slider__radio--2"></label>
           <label for="main-slider-3" class="main-slider__radio main-slider__radio--3"></label>
           <div class="main-slider__item main-slider__item--1">
-            <h2 class="main-slider__title">Самый крутой заголовок будет находиться здесь</h2>
+            <h2 class="main-slider__title">Самый крутой <span>заголовок будет здесь</span></h2>
             <a href="#" class="btn btn--green btn--slider">Подробнее</a>
           </div>
           <div class="main-slider__item main-slider__item--2">
-            <h2 class="main-slider__title">Наикрутейший заголовок будет находиться здесь</h2>
+            <h2 class="main-slider__title">Такой себе заголовок <span>будет находиться здесь</span></h2>
             <a href="#" class="btn btn--green btn--slider">Подробнее</a>
           </div>
           <div class="main-slider__item main-slider__item--3">
-            <h2 class="main-slider__title">А вот плохой заголовок будет находиться здесь</h2>
+            <h2 class="main-slider__title">А вот плохой заголовок <span>будет находиться здесь</span></h2>
             <a href="#" class="btn btn--green btn--slider">Подробнее</a>
           </div>
         </div>
@@ -327,7 +327,7 @@
           </li>
           <li class="article article--semya">
             <div class="article__container">
-              <h3 class="article__title article__title--semya">Как собирать урожай</h3>
+              <h3 class="article__title article__title--semya">Как правильно собирать урожай</h3>
               <span class="article__author">От Семяныча</span>
               <a href="#" class="btn btn--green btn--article">Прочитать на сайте</a>
             </div>
@@ -363,29 +363,30 @@
       <div class="about__container">
         <h3 class="about__title">О компании</h3>
         <p class="about__text">
+          Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов в абзацах, которое не получается при простой дубликации "Здесь ваш текст.. Здесь ваш текст.. Здесь ваш текст.." Многие программы электронной вёрстки и редакторы HTML используют Lorem Ipsum в качестве текста по умолчанию, так что поиск по ключевым словам "lorem ipsum" сразу показывает, как много веб-страниц всё ещё дожидаются своего настоящего рождения. За прошедшие годы текст Lorem Ipsum получил много версий. Некоторые версии появились по ошибке, некоторые - намеренно (например, юмористические варианты).<br>
           Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов в абзацах, которое не получается при простой дубликации "Здесь ваш текст.. Здесь ваш текст.. Здесь ваш текст.." Многие программы электронной вёрстки и редакторы HTML используют Lorem Ipsum в качестве текста по умолчанию, так что поиск по ключевым словам "lorem ipsum" сразу показывает, как много веб-страниц всё ещё дожидаются своего настоящего рождения. За прошедшие годы текст Lorem Ipsum получил много версий. Некоторые версии появились по ошибке, некоторые - намеренно (например, юмористические варианты).
         </p>
-        <button type="button" class="btn">Развернуть</button>
+        <button type="button" class="btn btn--about">Развернуть</button>
       </div>
     </section>
   </main>
 
   <footer class="footer">
     <div class="footer__container">
-      <nav class="navigation navigation--footer">
-        <div class="navigation__container">
-          <ul class="navigation__list">
-            <li class="navigation__item">
+      <nav class="footer-nav">
+        <div class="footer-nav__container">
+          <ul class="footer-nav__list">
+            <li class="footer-nav__item">
               <a>Главная</a>
             </li>
-            <li class="navigation__item">
+            <li class="footer-nav__item">
               <a href="collection.html">Коллекции</a>
             </li>
-            <li class="navigation__item">
+            <li class="footer-nav__item">
               <a href="article.html">Статьи</a>
             </li>
           </ul>
-          <a href="https://semyanich-semena.sale" class="btn">Перейти в магазин</a>
+          <a href="https://semyanich-semena.sale" class="btn btn--footer">Перейти в магазин</a>
         </div>
       </nav>
     </div>
@@ -406,8 +407,8 @@
         clickable: true,
       },
       breakpoints: {
-        960: {
-          slidesPerView: 4,
+        966: {
+          slidesPerView: 3,
           spaceBetween: 30,
         },
         768: {
@@ -418,7 +419,7 @@
           slidesPerView: 2,
           spaceBetween: 20,
         },
-        400: {
+        420: {
           slidesPerView: 1,
           spaceBetween: 10,
         }
@@ -427,5 +428,3 @@
   </script>
 </body>
 </html>
-
-
