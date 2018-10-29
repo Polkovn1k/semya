@@ -1,0 +1,120 @@
+.btn {
+  display: block;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  font-family: $font;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.31;
+  text-align: center;
+  color: $green;
+
+  background: $transparent;
+  border: solid 1px $green;
+  border-radius: 5px;
+  cursor: pointer;
+
+  @media (min-width: $desktop) {
+
+  }
+
+  &--green {
+    background: $green;
+    color: $white;
+    border: none;
+
+    @media (min-width: $desktop) {
+      width: 219px;
+      padding-top: 9px;
+      padding-bottom: 9px;
+    }
+  }
+
+  &--slider {
+    margin: 0 auto;
+    width: 47%;
+    max-width: 400px;
+
+    @media (min-width: $desktop) {
+      max-width: 139px;
+      margin: 0 auto 0 0;
+    }
+  }
+
+  &--small {
+    margin: 0 auto 31px auto;
+    padding-top: 4px;
+    padding-bottom: 5px;
+    width: 31%;
+    max-width: 400px;
+    font-size: 14px;
+    line-height: 1.36;
+
+    @media (min-width: $desktop) {
+      width: 106px;
+      margin: 3px 0 0 auto;
+    }
+  }
+
+  &--product {
+    margin: 0 auto;
+    margin-top: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 84%;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.36;
+
+    @media (min-width: $desktop) {
+      max-width: 140px;
+    }
+  }
+
+  &--article {
+    width: 100%;
+    margin-top: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.36;
+  }
+
+  &--about {
+    margin: 0 auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.36;
+
+    &:hover {
+      color: $white;
+      background-color: $green;
+    }
+
+    @media (min-width: $add-tablet) {
+      margin: 0 auto 0 0;
+      width: 139px;
+    }
+  }
+
+  &--about-hide {
+    display: none;
+  }
+
+  &--footer {
+    max-width: 350px;
+    margin: 0 auto;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-color: $white;
+    color: $white;
+  }
+
+  &--hide {
+    display: none;
+  }
+}
