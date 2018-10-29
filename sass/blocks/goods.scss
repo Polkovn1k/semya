@@ -1,4 +1,4 @@
-.article-page {
+.goods {
   padding-top: 18px;
   padding-bottom: 23px;
 
@@ -64,37 +64,6 @@
 
     @media (min-width: $desktop) {
       margin-bottom: 47px;
-    }
-  }
-
-  &__img {
-    margin-bottom: 30px;
-    text-align: center;
-
-    img {
-      width: 100%;
-    }
-  }
-
-  &__text {
-    font-family: $font;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 1.5;
-    color: $add;
-
-    p {
-      @include field-reset();
-      margin-bottom: 30px;
-    }
-
-    ul, ol {
-      @include order-reset();
-      padding-left: 40px;
-    }
-
-    li {
-      margin-bottom: 20px;
     }
   }
 }
