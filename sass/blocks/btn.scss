@@ -13,6 +13,7 @@
   border: solid 1px $green;
   border-radius: 5px;
   cursor: pointer;
+  transition: 0.3s ease color, 0.3s ease background-color;
 
   @media (min-width: $desktop) {
 

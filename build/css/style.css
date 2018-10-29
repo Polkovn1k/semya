@@ -1786,7 +1786,9 @@ button.swiper-pagination-bullet {
   background: transparent;
   border: solid 1px #74b908;
   border-radius: 5px;
-  cursor: pointer; }
+  cursor: pointer;
+  -webkit-transition: 0.3s ease color, 0.3s ease background-color;
+  transition: 0.3s ease color, 0.3s ease background-color; }
   .btn--green {
     background: #74b908;
     color: #ffffff;
