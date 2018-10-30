@@ -22,6 +22,6 @@ var aboutText =  document.querySelector(".about__text");
 
 showAbout.addEventListener("click", function(event) {
   event.preventDefault();
-  aboutText.classList.add("about__text--show");
-  showAbout.classList.add("btn--about-hide");
+  aboutText.classList.toggle("about__text--show");
+  showAbout.classList.toggle("btn--about-close");
 });

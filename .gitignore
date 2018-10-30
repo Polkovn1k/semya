@@ -8,5 +8,6 @@
 Info.txt
 node_modules/
 layout/
+build/
 npm-debug.*
 Thumbs.db

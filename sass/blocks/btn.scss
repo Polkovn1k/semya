@@ -2,6 +2,8 @@
   display: block;
   padding-top: 11px;
   padding-bottom: 11px;
+  padding-right: 5px;
+  padding-left: 5px;
   font-family: $font;
   font-size: 16px;
   font-weight: 400;
@@ -14,10 +16,6 @@
   border-radius: 5px;
   cursor: pointer;
   transition: 0.3s ease color, 0.3s ease background-color;
-
-  @media (min-width: $desktop) {
-
-  }
 
   &--green {
     background: $green;
@@ -47,6 +45,7 @@
     padding-top: 4px;
     padding-bottom: 5px;
     width: 31%;
+    min-width: 110px;
     max-width: 400px;
     font-size: 14px;
     line-height: 1.36;
@@ -83,6 +82,7 @@
   }
 
   &--about {
+    position: relative;
     margin: 0 auto;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -90,6 +90,7 @@
     font-size: 14px;
     font-weight: 600;
     line-height: 1.36;
+    outline: none;
 
     &:hover {
       color: $white;
@@ -102,8 +103,33 @@
     }
   }
 
-  &--about-hide {
-    display: none;
+  &--about-close {
+    color: $transparent;
+  }
+
+  &--about-close::before {
+    position: absolute;
+    content: "Скрыть";
+    display: block;
+    background-color: $transparent;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: $green;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.36;
+  }
+
+  &--about-close:hover::before {
+    color: $white;
+  }
+
+  &--about-close:hover {
+    color: $transparent;
   }
 
   &--footer {

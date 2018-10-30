@@ -90,11 +90,34 @@
 
     ul, ol {
       @include order-reset();
-      padding-left: 40px;
+      padding-left: $article-li-marker;
     }
 
     li {
+      position: relative;
       margin-bottom: 20px;
+    }
+
+    li::before {
+      @include pseudo();
+      top: 5px;
+      left: -$article-li-marker;
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      background-color: $green;
+    }
+
+    li::after {
+      @include pseudo();
+      top: 11px;
+      left: -36px;
+      width: 10px;
+      height: 5px;
+      border: 2px solid $white;
+      border-right: none;
+      border-top: none;
+      transform: rotate(-53deg);
     }
   }
 }

@@ -6,13 +6,17 @@
 
   &__list {
     @include order-reset();
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 292px;
     margin-bottom: 24px;
+    margin-right: auto;
+    margin-left: auto;
     text-align: center;
   }
 
   &__item {
-    display: inline-block;
-    margin-right: 53px;
     font-family: $font;
     font-size: 16px;
     font-weight: 400;
@@ -22,9 +26,5 @@
     a {
 
     }
-  }
-
-  &__item:last-child {
-    margin-right: 0;
   }
 }
