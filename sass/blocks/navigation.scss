@@ -13,10 +13,6 @@
     display: flex;
   }
 
-/*   &::before {
-  @include
-} */
-
   &__container {
     @include container();
     position: relative;
@@ -168,6 +164,7 @@
     background-image: linear-gradient(180deg, $transparent 10px, $green 10px, $green 12px, $transparent 12px);
     border: none;
     cursor: pointer;
+    outline: none;
 
     @media (min-width: $desktop) {
       display: none;

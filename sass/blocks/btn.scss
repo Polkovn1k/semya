@@ -118,4 +118,40 @@
   &--hide {
     display: none;
   }
+
+  &--goods {
+    width: 100%;
+    margin-bottom: 18px;
+    display: inline-block;
+    vertical-align: top;
+
+    @media (min-width: $add-tablet) {
+      margin-bottom: 0;
+      width: 48%;
+    }
+
+    @media (min-width: $desktop) {
+      margin-bottom: 0;
+      width: auto;
+      padding-right: 15px;
+      padding-left: 15px;
+    }
+  }
+
+  &--goods:last-child {
+
+
+    @media (min-width: $add-tablet) {
+      margin-left: 3%;
+    }
+
+    @media (min-width: $desktop) {
+      margin-left: 28px;
+    }
+  }
+
+  &--g-green {
+    background: $green;
+    color: $white;
+  }
 }

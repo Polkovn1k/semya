@@ -1,0 +1,179 @@
+.goods {
+  padding-top: 18px;
+  padding-bottom: 23px;
+
+  &__container {
+    @include container();
+  }
+
+  &__back {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 30px;
+    margin-bottom: 20px;
+    width: 51px;
+    height: 51px;
+    border-radius: 50%;
+    border: 1px solid $add-border;
+    background: $white;
+    font-size: 0;
+  }
+
+  &__back::before {
+    @include pseudo();
+    width: 16px;
+    height: 16px;
+    left: 15px;
+    top: 16px;
+    border: 2px solid $main;
+    border-right: 2px solid $transparent;
+    border-top: 2px solid $transparent;
+    transform: rotate(45deg);
+  }
+
+  &__back::after {
+    @include pseudo();
+    width: 24px;
+    height: 2px;
+    top: 23px;
+    left: 13px;
+    background: $main;
+  }
+
+  &__title {
+    @include field-reset();
+    position: relative;
+    padding-top: 9px;
+    margin-bottom: 20px;
+    display: inline-block;
+    vertical-align: top;
+    font-family: $font;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 1.36;
+    color: $main;
+  }
+
+  &__gap {
+    @include field-reset();
+    height: 1px;
+    background-color: $add-border;
+    border: none;
+    margin-bottom: 32px;
+
+    @media (min-width: $desktop) {
+      margin-bottom: 47px;
+    }
+  }
+
+  &__main-info {
+    padding-bottom: 25px;
+
+    @media (min-width: $desktop) {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      padding-bottom: 95px;
+    }
+  }
+
+  &__img {
+    margin-bottom: 34px;
+    text-align: center;
+
+    img {
+      width: 100%;
+      max-width: 500px;
+    }
+
+    @media (min-width: $desktop) {
+      width: 385px;
+      margin-bottom: 0;
+      margin-right: 30px;
+
+      img {
+        max-width: 385px;
+      }
+    }
+  }
+
+  &__properties {
+
+    @media (min-width: $desktop) {
+      width: 56%;
+      flex-grow: 1;
+    }
+  }
+
+  &__property-title {
+    @include field-reset();
+    margin-bottom: 28px;
+    font-family: $font;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.33;
+    text-align: center;
+    color: $main;
+
+    @media (min-width: $desktop) {
+      text-align: left;
+    }
+  }
+
+  &__property-text {
+    @include field-reset();
+    margin-bottom: 18px;
+    font-family: $font;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: $add;
+  }
+
+  &__table {
+    width: 100%;
+    margin-bottom: 32px;
+    border-collapse: collapse;
+
+    tr {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+    td {
+      padding: 17px 25px;
+      border: solid 1px $add-border;
+      background-color: $table;
+      width: 100%;
+    }
+
+    span {
+      display: block;
+      font-family: $font;
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 1.33;
+      color: $main;
+    }
+
+    span:last-child {
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 1.5;
+      color: $add-green;
+    }
+
+    @media (min-width: $desktop) {
+      margin-bottom: 60px;
+
+      tr {
+        display: table;
+      }
+
+      td {
+        width: 33.33%;
+      }
+    }
+  }
+}
