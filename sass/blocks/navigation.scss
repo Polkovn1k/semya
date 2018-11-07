@@ -96,7 +96,7 @@
         border-bottom: solid 3px $green;
       }
 
-      a[href] {
+      a[href]:not(.navigation__current-link) {
         border-bottom: none;
       }
 
@@ -147,7 +147,7 @@
         border-bottom: solid 3px $green;
       }
 
-      a[href] {
+      a[href]:not(.navigation__current-link) {
         border-bottom: none;
       }
     }

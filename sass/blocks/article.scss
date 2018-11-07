@@ -4,9 +4,10 @@
   margin-bottom: 27px;
   padding-bottom: 30px;
   border: solid 1px $add-border;
-  transition: 0.3s ease transform, 0.3s ease box-shadow;
+  transition: 0.3s ease transform, 0.3s ease box-shadow, 0.3s ease border-color;
 
   &:hover {
+    border-color: $green;
 
     .btn {
       color: $white;
