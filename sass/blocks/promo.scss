@@ -76,4 +76,27 @@
     text-align: left;
     color: $add;
   }
+
+  &__pagination {
+    position: absolute;
+    bottom: 60px;
+  }
+
+  &__pagination-item {
+    display: inline-block;
+    margin-right: 10px;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: $white;
+    cursor: pointer;
+  }
+
+  &__pagination-item:last-child {
+    margin-right: 0;
+  }
+
+  &__pagination-item--active {
+    background: $green;
+  }
 }

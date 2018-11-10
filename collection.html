@@ -335,9 +335,9 @@
     </div>
   </footer>
   <script src="js/script-sh.js"></script>
-  <script src="js/swiper.js"></script>
+  <script src="js/swiper.min.js"></script>
   <script>
-    var swiper = new Swiper('.swiper-container', {
+    var swiper = new Swiper('.carousel__container', {
       navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
@@ -345,10 +345,6 @@
       slidesPerView: 4,
       spaceBetween: 30,
       // init: false,
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-      },
       breakpoints: {
         966: {
           slidesPerView: 3,

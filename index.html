@@ -14,9 +14,6 @@
   <link rel="canonical" href="https://***.ru/">
 </head>
 <body>
-  <!-- <div style="display: none">
-    <include src="build/img/sprite.svg"></include>
-  </div> -->
 
   <header class="header header--index">
     <nav class="navigation">
@@ -51,57 +48,27 @@
     <section class="promo">
       <div class="swiper-container swiper-container-horizontal promo__container">
         <div class="swiper-wrapper main-slider">
-          <div class="swiper-slide main-slider__item main-slider__item--1">
+          <div class="swiper-slide main-slider__item">
             <h2 class="main-slider__title">Самый крутой <span>заголовок будет здесь</span></h2>
-            <a href="#" class="btn btn--green btn--slider">Подробнее</a>
+            <span class="main-slider__author">От Семяныча</span>
+            <a href="#" class="btn btn--green btn--slider">Прочитать на сайте</a>
           </div>
-          <div class="swiper-slide main-slider__item main-slider__item--2">
+          <div class="swiper-slide main-slider__item">
             <h2 class="main-slider__title">Такой себе заголовок <span>будет находиться здесь</span></h2>
-            <a href="#" class="btn btn--green btn--slider">Подробнее</a>
+            <span class="main-slider__author">От Семяныча</span>
+            <a href="#" class="btn btn--green btn--slider">Прочитать на сайте</a>
           </div>
-          <div class="swiper-slide main-slider__item main-slider__item--3">
+          <div class="swiper-slide main-slider__item">
             <h2 class="main-slider__title">А вот плохой заголовок <span>будет находиться здесь</span></h2>
-            <a href="#" class="btn btn--green btn--slider">Подробнее</a>
+            <span class="main-slider__author">От Семяныча</span>
+            <a href="#" class="btn btn--green btn--slider">Прочитать на сайте</a>
           </div>
         </div>
-        <div class="swiper-pagination">
+        <div class="swiper-pagination promo__pagination">
           <span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 1"></span>
           <span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 2"></span>
           <span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 3"></span>
         </div>
-
-        <!-- <ul class="promo__list">
-          <li class="promo__item">
-            <svg width="57" height="57" aria-hidden="true" role="presentation">
-              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#percent"></use>
-            </svg>
-            <span class="promo__item-title">Гибкая система скидок</span>
-            <p class="promo__item-text">
-              2.5% скидка на заказы от 5.000 р<br>
-              5% скидка на заказы от 10.000 р<br>
-              7.5% скидка на заказы от 15.000 р
-            </p>
-          </li>
-          <li class="promo__item">
-            <svg width="57" height="57" aria-hidden="true" role="presentation">
-              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#wallet"></use>
-            </svg>
-            <span class="promo__item-title">Наложенный платеж </span>
-            <p class="promo__item-text">
-              до 25 000 рублей<br>
-              оплата при получении в отделении почты
-            </p>
-          </li>
-          <li class="promo__item">
-            <svg width="57" height="57" aria-hidden="true" role="presentation">
-              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#gift"></use>
-            </svg>
-            <span class="promo__item-title">Приятные бонусы</span>
-            <p class="promo__item-text">
-              Бесплатные бонусные семена и фирменные сувениры в подарок каждому покупателю!
-            </p>
-          </li>
-        </ul> -->
       </div>
     </section>
     <section class="collection">
@@ -390,13 +357,13 @@
     </div>
   </footer>
   <script src="js/script.js"></script>
-  <script src="js/swiper.js"></script>
+  <script src="js/swiper.min.js"></script>
   <script>
     var swiper = new Swiper('.promo__container', {
       spaceBetween: 30,
       centeredSlides: true,
       autoplay: {
-        delay: 2500,
+        delay: 5000,
         disableOnInteraction: false,
       },
       pagination: {
@@ -404,7 +371,6 @@
         clickable: true,
       },
     });
-
 
     var swiper = new Swiper('.carousel__container', {
       navigation: {
@@ -414,10 +380,6 @@
       slidesPerView: 4,
       spaceBetween: 30,
       // init: false,
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-      },
       breakpoints: {
         966: {
           slidesPerView: 3,

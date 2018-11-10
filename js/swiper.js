@@ -5215,8 +5215,8 @@
         dynamicMainBullets: 1,
         formatFractionCurrent: function (number) { return number; },
         formatFractionTotal: function (number) { return number; },
-        bulletClass: 'swiper-pagination-bullet',
-        bulletActiveClass: 'swiper-pagination-bullet-active',
+        bulletClass: 'promo__pagination-item',
+        bulletActiveClass: 'promo__pagination-item--active',
         modifierClass: 'swiper-pagination-', // NEW
         currentClass: 'swiper-pagination-current',
         totalClass: 'swiper-pagination-total',
