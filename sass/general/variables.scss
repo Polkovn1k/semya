@@ -3,7 +3,8 @@ $indent: 15px;
 
 // Grid - breakpoints
 $tablet: 768px;
-$add-tablet: 640px;
+$add-mobile: 421px;
+$add-tablet: 641px;
 $desktop: 996px;
 $max-desktop: 1200px;
 $desktop-add: 966px;
@@ -30,3 +31,6 @@ $mobile-nav-height: 65px;
 $desktop-nav-height: 98px;
 $tablet-container: 900px;
 $article-li-marker: 40px;
+$collection-title-mb: 18px;
+$collection-title-lh: 1.33;
+$collection-title-fs: 24px;

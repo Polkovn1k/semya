@@ -50,9 +50,34 @@
     font-size: 14px;
     line-height: 1.36;
 
+    &:hover {
+      color: $white;
+      background-color: $green;
+    }
+
+    @media (min-width: $add-tablet) {
+      width: 106px;
+      margin: 3px 0 0 auto;
+    }
+  }
+
+  &--small-index {
+
+    @media (min-width: $add-tablet) {
+      margin: 0 auto 31px auto;
+    }
+
     @media (min-width: $desktop) {
       width: 106px;
       margin: 3px 0 0 auto;
+    }
+  }
+
+  &--collection {
+    margin-bottom: 20px;
+
+    @media (min-width: $add-tablet) {
+      margin-top: -($collection-title-mb + $collection-title-lh + $collection-title-fs);
     }
   }
 
@@ -139,6 +164,11 @@
     padding-bottom: 8px;
     border-color: $white;
     color: $white;
+
+    &:hover {
+      background-color: $white;
+      color: $black;
+    }
   }
 
   &--hide {
@@ -165,7 +195,6 @@
   }
 
   &--goods:last-child {
-
 
     @media (min-width: $add-tablet) {
       margin-left: 3%;

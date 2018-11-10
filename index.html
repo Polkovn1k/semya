@@ -14,9 +14,9 @@
   <link rel="canonical" href="https://***.ru/">
 </head>
 <body>
-  <div style="display: none">
+  <!-- <div style="display: none">
     <include src="build/img/sprite.svg"></include>
-  </div>
+  </div> -->
 
   <header class="header header--index">
     <nav class="navigation">
@@ -49,28 +49,28 @@
 
   <main class="main">
     <section class="promo">
-      <div class="promo__container">
-        <div class="main-slider">
-          <input type="radio" id="main-slider-1" class="main-slider__slider-1" name="radio" checked>
-          <input type="radio" id="main-slider-2" class="main-slider__slider-2" name="radio">
-          <input type="radio" id="main-slider-3" class="main-slider__slider-3" name="radio">
-          <label for="main-slider-1" class="main-slider__radio main-slider__radio--1"></label>
-          <label for="main-slider-2" class="main-slider__radio main-slider__radio--2"></label>
-          <label for="main-slider-3" class="main-slider__radio main-slider__radio--3"></label>
-          <div class="main-slider__item main-slider__item--1">
+      <div class="swiper-container swiper-container-horizontal promo__container">
+        <div class="swiper-wrapper main-slider">
+          <div class="swiper-slide main-slider__item main-slider__item--1">
             <h2 class="main-slider__title">Самый крутой <span>заголовок будет здесь</span></h2>
             <a href="#" class="btn btn--green btn--slider">Подробнее</a>
           </div>
-          <div class="main-slider__item main-slider__item--2">
+          <div class="swiper-slide main-slider__item main-slider__item--2">
             <h2 class="main-slider__title">Такой себе заголовок <span>будет находиться здесь</span></h2>
             <a href="#" class="btn btn--green btn--slider">Подробнее</a>
           </div>
-          <div class="main-slider__item main-slider__item--3">
+          <div class="swiper-slide main-slider__item main-slider__item--3">
             <h2 class="main-slider__title">А вот плохой заголовок <span>будет находиться здесь</span></h2>
             <a href="#" class="btn btn--green btn--slider">Подробнее</a>
           </div>
         </div>
-        <ul class="promo__list">
+        <div class="swiper-pagination">
+          <span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 1"></span>
+          <span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 2"></span>
+          <span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 3"></span>
+        </div>
+
+        <!-- <ul class="promo__list">
           <li class="promo__item">
             <svg width="57" height="57" aria-hidden="true" role="presentation">
               <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#percent"></use>
@@ -101,17 +101,19 @@
               Бесплатные бонусные семена и фирменные сувениры в подарок каждому покупателю!
             </p>
           </li>
-        </ul>
+        </ul> -->
       </div>
     </section>
     <section class="collection">
       <div class="collection__container">
         <h2 class="collection__title">Коллекции</h2>
-        <a href="#" class="btn btn--small">Смотреть все</a>
+        <a href="collection.html" class="btn btn--small btn--small-index">Смотреть все</a>
         <hr class="collection__gap">
 
         <div class="carousel carousel--popular">
-          <span class="carousel__title">Популярные</span>
+          <div class="carousel__title">
+            <a href="popular.html">Популярные</a>
+          </div>
           <div class="swiper-container carousel__container">
             <ul class="swiper-wrapper carousel__list">
               <li class="swiper-slide product">
@@ -193,7 +195,9 @@
         </div>
 
         <div class="carousel carousel--cheap">
-          <span class="carousel__title">Дешевые</span>
+          <div class="carousel__title">
+            <a href="popular.html">Дешевые</a>
+          </div>
           <div class="swiper-container carousel__container">
             <ul class="swiper-wrapper carousel__list">
               <li class="swiper-slide product">
@@ -279,7 +283,7 @@
     <section class="articles">
       <div class="articles__container">
         <h3 class="articles__title">Статьи</h3>
-        <a href="#" class="btn btn--small">Смотреть все</a>
+        <a href="articles.html" class="btn btn--small btn--small-index">Смотреть все</a>
         <hr class="collection__gap">
 
         <ul class="articles__list">
@@ -355,7 +359,7 @@
     </section>
     <section class="about">
       <div class="about__container">
-        <h3 class="about__title">О компании</h3>
+        <h1 class="about__title">Здесь будет изменяемый заголовок H1</h1>
         <p class="about__text">
           Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов в абзацах, которое не получается при простой дубликации "Здесь ваш текст.. Здесь ваш текст.. Здесь ваш текст.." Многие программы электронной вёрстки и редакторы HTML используют Lorem Ipsum в качестве текста по умолчанию, так что поиск по ключевым словам "lorem ipsum" сразу показывает, как много веб-страниц всё ещё дожидаются своего настоящего рождения. За прошедшие годы текст Lorem Ipsum получил много версий. Некоторые версии появились по ошибке, некоторые - намеренно (например, юмористические варианты).<br>
           Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов в абзацах, которое не получается при простой дубликации "Здесь ваш текст.. Здесь ваш текст.. Здесь ваш текст.." Многие программы электронной вёрстки и редакторы HTML используют Lorem Ipsum в качестве текста по умолчанию, так что поиск по ключевым словам "lorem ipsum" сразу показывает, как много веб-страниц всё ещё дожидаются своего настоящего рождения. За прошедшие годы текст Lorem Ipsum получил много версий. Некоторые версии появились по ошибке, некоторые - намеренно (например, юмористические варианты).
@@ -388,7 +392,21 @@
   <script src="js/script.js"></script>
   <script src="js/swiper.js"></script>
   <script>
-    var swiper = new Swiper('.swiper-container', {
+    var swiper = new Swiper('.promo__container', {
+      spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+    });
+
+
+    var swiper = new Swiper('.carousel__container', {
       navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',

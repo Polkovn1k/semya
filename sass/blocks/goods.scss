@@ -142,11 +142,11 @@
     }
 
     td {
+      display: block;
       padding: 17px 25px;
       border: solid 1px $add-border;
       background-color: $table;
       width: 100%;
-      display: inline-block;
     }
 
     span {
@@ -165,19 +165,82 @@
       color: $add-green;
     }
 
-    @media (min-width: $tablet) {
-      margin-bottom: 45px;
+    @media (min-width: $add-tablet) {
+      tr {
+        display: flex;
+        flex-wrap: wrap;
+      }
 
       td {
         width: 50%;
+        flex-grow: 1;
+      }
+    }
+
+    @media (min-width: $tablet) {
+      margin-bottom: 45px;
+
+      tr {
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      td {
+        width: 33.33%;
+      }
+
+      span {
+        font-size: 14px;
+      }
+
+      span:last-child {
+        font-size: 20px;
       }
     }
 
     @media (min-width: $desktop) {
 
       td {
-        width: 33.33%;
+        width: 16.66%;
+        padding: 15px 10px;
+        flex-grow: 1;
       }
+
+      span {
+        font-size: 14px;
+      }
+
+      span:last-child {
+        font-size: 14px;
+        word-break: break-word;
+      }
+    }
+  }
+}
+
+/* ----------TABLE IN IE 10-11 */
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .goods__table {
+    width: 100%;
+    margin-bottom: 32px;
+    border-collapse: collapse;
+
+    tr {
+      display: block;
+    }
+
+    td {
+      display: block;
+      padding: 17px 25px;
+      width: 100%;
+    }
+
+    span {
+      font-size: 18px;
+    }
+
+    span:last-child {
+      font-size: 24px;
     }
   }
 }
