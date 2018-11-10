@@ -19,13 +19,13 @@
     <nav class="navigation">
       <div class="navigation__container">
         <div class="navigation__logo">
-          <a href="index.html" class="navigation__logo-link">
+          <a href="/" class="navigation__logo-link">
             <img src="img/logo.png" alt="#">
           </a>
         </div>
         <ul class="navigation__list">
           <li class="navigation__item">
-            <a href="index.html">Главная</a>
+            <a href="/">Главная</a>
           </li>
           <li class="navigation__item">
             <a>Коллекции</a>
@@ -48,7 +48,7 @@
     <div class="pagination">
       <ul class="pagination__list">
         <li class="pagination__item">
-          <a href="index.html">Главная</a>
+          <a href="/">Главная</a>
         </li>
         <li class="pagination__item">
           <a>Коллекции</a>
@@ -59,11 +59,11 @@
     <section class="collection collection--main-page">
       <div class="collection__container collection__container--main-page">
         <h2 class="collection__title">Коллекции</h2>
-        <a href="#" class="btn btn--small btn--hide">Смотреть все</a>
         <hr class="collection__gap">
 
         <div class="carousel carousel--popular">
-          <span class="carousel__title">Популярные</span>
+          <span class="carousel__title carousel__title--collection">Популярные</span>
+          <a href="popular.html" class="btn btn--small btn--collection">Смотреть все</a>
           <div class="swiper-container carousel__container">
             <ul class="swiper-wrapper carousel__list">
               <li class="swiper-slide product">
@@ -145,7 +145,8 @@
         </div>
 
         <div class="carousel carousel--cheap">
-          <span class="carousel__title">Дешевые</span>
+          <span class="carousel__title carousel__title--collection">Дешевые</span>
+          <a href="popular.html" class="btn btn--small btn--collection">Смотреть все</a>
           <div class="swiper-container carousel__container">
             <ul class="swiper-wrapper carousel__list">
               <li class="swiper-slide product">
@@ -227,7 +228,8 @@
         </div>
 
         <div class="carousel carousel--cheap">
-          <span class="carousel__title">Урожайные</span>
+          <span class="carousel__title carousel__title--collection">Урожайные</span>
+          <a href="popular.html" class="btn btn--small btn--collection">Смотреть все</a>
           <div class="swiper-container carousel__container">
             <ul class="swiper-wrapper carousel__list">
               <li class="swiper-slide product">
@@ -308,17 +310,6 @@
           </div>
         </div>
 
-      </div>
-    </section>
-
-    <section class="about">
-      <div class="about__container">
-        <h3 class="about__title">О компании</h3>
-        <p class="about__text">
-          Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов в абзацах, которое не получается при простой дубликации "Здесь ваш текст.. Здесь ваш текст.. Здесь ваш текст.." Многие программы электронной вёрстки и редакторы HTML используют Lorem Ipsum в качестве текста по умолчанию, так что поиск по ключевым словам "lorem ipsum" сразу показывает, как много веб-страниц всё ещё дожидаются своего настоящего рождения. За прошедшие годы текст Lorem Ipsum получил много версий. Некоторые версии появились по ошибке, некоторые - намеренно (например, юмористические варианты).<br>
-          Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов в абзацах, которое не получается при простой дубликации "Здесь ваш текст.. Здесь ваш текст.. Здесь ваш текст.." Многие программы электронной вёрстки и редакторы HTML используют Lorem Ipsum в качестве текста по умолчанию, так что поиск по ключевым словам "lorem ipsum" сразу показывает, как много веб-страниц всё ещё дожидаются своего настоящего рождения. За прошедшие годы текст Lorem Ipsum получил много версий. Некоторые версии появились по ошибке, некоторые - намеренно (например, юмористические варианты).
-        </p>
-        <button type="button" class="btn btn--about">Развернуть</button>
       </div>
     </section>
   </main>
@@ -329,11 +320,11 @@
         <div class="footer-nav__container">
           <ul class="footer-nav__list">
             <li class="footer-nav__item">
-              <a href="index.html">Главная</a>
+              <a href="/">Главная</a>
             </li>
             <li class="footer-nav__item">
-              <a>Коллекции
-            </a></li>
+              <a>Коллекции</a>
+            </li>
             <li class="footer-nav__item">
               <a href="articles.html">Статьи</a>
             </li>
@@ -343,10 +334,10 @@
       </nav>
     </div>
   </footer>
-  <script src="js/script.js"></script>
-  <script src="js/swiper.js"></script>
+  <script src="js/script-sh.js"></script>
+  <script src="js/swiper.min.js"></script>
   <script>
-    var swiper = new Swiper('.swiper-container', {
+    var swiper = new Swiper('.carousel__container', {
       navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
@@ -354,10 +345,6 @@
       slidesPerView: 4,
       spaceBetween: 30,
       // init: false,
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-      },
       breakpoints: {
         966: {
           slidesPerView: 3,
