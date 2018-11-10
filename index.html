@@ -49,27 +49,27 @@
 
   <main class="main">
     <section class="promo">
-      <div class="promo__container">
-        <div class="main-slider">
-          <input type="radio" id="main-slider-1" class="main-slider__slider-1" name="radio" checked>
-          <input type="radio" id="main-slider-2" class="main-slider__slider-2" name="radio">
-          <input type="radio" id="main-slider-3" class="main-slider__slider-3" name="radio">
-          <label for="main-slider-1" class="main-slider__radio main-slider__radio--1"></label>
-          <label for="main-slider-2" class="main-slider__radio main-slider__radio--2"></label>
-          <label for="main-slider-3" class="main-slider__radio main-slider__radio--3"></label>
-          <div class="main-slider__item main-slider__item--1">
+      <div class="swiper-container swiper-container-horizontal promo__container">
+        <div class="swiper-wrapper main-slider">
+          <div class="swiper-slide main-slider__item main-slider__item--1">
             <h2 class="main-slider__title">Самый крутой <span>заголовок будет здесь</span></h2>
             <a href="#" class="btn btn--green btn--slider">Подробнее</a>
           </div>
-          <div class="main-slider__item main-slider__item--2">
+          <div class="swiper-slide main-slider__item main-slider__item--2">
             <h2 class="main-slider__title">Такой себе заголовок <span>будет находиться здесь</span></h2>
             <a href="#" class="btn btn--green btn--slider">Подробнее</a>
           </div>
-          <div class="main-slider__item main-slider__item--3">
+          <div class="swiper-slide main-slider__item main-slider__item--3">
             <h2 class="main-slider__title">А вот плохой заголовок <span>будет находиться здесь</span></h2>
             <a href="#" class="btn btn--green btn--slider">Подробнее</a>
           </div>
         </div>
+        <div class="swiper-pagination">
+          <span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 1"></span>
+          <span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 2"></span>
+          <span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 3"></span>
+        </div>
+
         <!-- <ul class="promo__list">
           <li class="promo__item">
             <svg width="57" height="57" aria-hidden="true" role="presentation">
@@ -392,7 +392,21 @@
   <script src="js/script.js"></script>
   <script src="js/swiper.js"></script>
   <script>
-    var swiper = new Swiper('.swiper-container', {
+    var swiper = new Swiper('.promo__container', {
+      spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+    });
+
+
+    var swiper = new Swiper('.carousel__container', {
       navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',

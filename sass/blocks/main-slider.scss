@@ -2,12 +2,6 @@
   position: relative;
   margin: 0 -15px;
 
-  &__slider-1,
-  &__slider-2,
-  &__slider-3 {
-    display: none;
-  }
-
   &__radio {
     position: absolute;
     right: 50%;
@@ -48,12 +42,6 @@
       min-height: 279px;
       border-radius: 10px;
     }
-  }
-
-  &__item--1,
-  &__item--2,
-  &__item--3 {
-    display: none;
   }
 
   &__slider-1:checked ~ &__radio--1,
