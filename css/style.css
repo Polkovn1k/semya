@@ -1182,8 +1182,7 @@ button.swiper-pagination-bullet {
   margin: 0 auto;
   min-width: 320px;
   padding-right: 15px;
-  padding-left: 15px;
-  padding-bottom: 35px; }
+  padding-left: 15px; }
   @media (min-width: 996px) {
     .promo__container {
       padding-right: 15px;
@@ -1249,7 +1248,7 @@ button.swiper-pagination-bullet {
 
 .promo__pagination {
   position: absolute;
-  bottom: 60px; }
+  bottom: 25px; }
 
 .promo__pagination-item {
   display: inline-block;
@@ -1356,6 +1355,9 @@ button.swiper-pagination-bullet {
           flex-wrap: wrap;
       padding-top: 30px; } }
 
+.collection__container--index {
+  padding-top: 0; }
+
 .collection__title {
   margin: 0;
   padding: 0;
@@ -1395,6 +1397,7 @@ button.swiper-pagination-bullet {
     padding-top: 0; }
   .carousel__title {
     display: block;
+    margin: 0;
     margin-bottom: 14px;
     font-size: 24px;
     font-weight: 600;
