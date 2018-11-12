@@ -6,7 +6,6 @@
 
   &__container {
     @include container();
-    padding-bottom: 35px;
 
     @media (min-width: $desktop) {}
   }
@@ -79,7 +78,7 @@
 
   &__pagination {
     position: absolute;
-    bottom: 60px;
+    bottom: 25px;
   }
 
   &__pagination-item {

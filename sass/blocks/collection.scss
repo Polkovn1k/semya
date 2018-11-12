@@ -12,6 +12,13 @@
     }
   }
 
+  &__container--index {
+    padding-top: 0;
+
+    @media (min-width: $desktop) {
+    }
+  }
+
   &__title {
     @include field-reset();
     position: relative;
