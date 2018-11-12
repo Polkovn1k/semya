@@ -30,11 +30,20 @@
   }
 
   &--slider {
+    position: absolute;
+    bottom: 55px;
+    left: 50%;
+    transform: translateX(-50%);
     margin: 0 auto;
+    min-width: 185px;
     width: 47%;
     max-width: 400px;
 
     @media (min-width: $desktop) {
+      position: static;
+      bottom: auto;
+      left: auto;
+      transform: none;
       max-width: 200px;
       margin: 0 auto 0 0;
     }

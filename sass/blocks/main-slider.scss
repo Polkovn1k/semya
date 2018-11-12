@@ -1,23 +1,8 @@
 .main-slider {
   position: relative;
 
-  &__radio {
-    position: absolute;
-    right: 50%;
-    bottom: 23px;
-    transform: translateX(50%);
-    width: 7px;
-    height: 7px;
-    border-radius: 50%;
-    background-color: $white;
-    cursor: pointer;
-
-    @media (min-width: $desktop) {
-      bottom: 38px;
-    }
-  }
-
   &__item {
+    position: relative;
     display: flex;
     flex-direction: column;
     padding-left: 30px;
@@ -40,7 +25,11 @@
 
   &__title {
     @include field-reset();
-    margin-bottom: 20px;
+    position: absolute;
+    width: 90%;
+    left: 50%;
+    bottom: 120px;
+    transform: translateX(-50%);
 
     font-family: $font;
     font-size: 26px;
@@ -51,6 +40,8 @@
     color: $white;
 
     @media (min-width: $desktop) {
+      position: static;
+      transform: none;
       margin-bottom: 20px;
       font-size: 33px;
       line-height: 1.33;
@@ -64,7 +55,6 @@
 
   &__author {
     display: block;
-    margin-bottom: 200px;
     order: -1;
 
     font-size: 14px;
