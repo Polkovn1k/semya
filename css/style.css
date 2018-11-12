@@ -2033,12 +2033,12 @@ button.swiper-pagination-bullet {
     .goods__table span {
       display: block;
       font-family: "SegoeUI", sans-serif;
-      font-size: 18px;
+      font-size: 14px;
       font-weight: 600;
       line-height: 1.33;
       color: #707070; }
     .goods__table span:last-child {
-      font-size: 24px;
+      font-size: 20px;
       font-weight: 400;
       line-height: 1.5;
       color: #74b908; }
@@ -2053,11 +2053,7 @@ button.swiper-pagination-bullet {
         width: 50%;
         -webkit-box-flex: 1;
             -ms-flex-positive: 1;
-                flex-grow: 1; }
-      .goods__table span {
-        font-size: 14px; }
-      .goods__table span:last-child {
-        font-size: 20px; } }
+                flex-grow: 1; } }
     @media (min-width: 768px) {
       .goods__table {
         margin-bottom: 45px; }
