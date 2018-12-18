@@ -30,6 +30,9 @@
 
   &__title {
     @include field-reset();
+    padding: 0 5px;
+    height: 50px;
+    overflow: hidden;
     margin-bottom: 12px;
     text-align: center;
     font-size: 18px;
